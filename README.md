@@ -1,70 +1,103 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**EDUARDO FERNANDES DOS SANTOS - 2312130156**
 
-## Available Scripts
+# TRABALHO TECNOLOGIA WEB USANDO REACT
 
-In the project directory, you can run:
+Esta é uma aplicação web desenvolvida em React que permite ao usuário cadastrar, visualizar e remover itens. O projeto foi criado para demonstrar habilidades fundamentais no desenvolvimento frontend, incluindo componentização, gerenciamento de estado, integração com API REST, roteamento e estilização.
 
-### `npm start`
+## ✨ Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Cadastro de Itens:** Formulário com validação de campos para adicionar novos itens.
+- **Listagem Dinâmica:** Exibição de todos os itens cadastrados, atualizada em tempo real.
+- **Remoção de Itens:** Funcionalidade para excluir itens da lista.
+- **Persistência de Dados:** Os dados são salvos e recuperados através de uma API REST simulada, sobrevivendo ao recarregamento da página.
+- **Navegação:** Roteamento entre as páginas de "Cadastro" e "Listagem".
+- **Interface Responsiva:** Layout agradável que se adapta a diferentes tamanhos de tela, construído com Material-UI.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tecnologias Utilizadas
 
-### `npm test`
+- **Frontend:**
+  - [React.js](https://reactjs.org/)
+  - [React Router DOM](https://reactrouter.com/) (para navegação)
+  - [Context API](https://reactjs.org/docs/context.html) (para gerenciamento de estado global)
+  - [Material-UI (MUI)](https://mui.com/) (para componentes de UI e estilização)
+  - [CSS Modules](https://github.com/css-modules/css-modules) (para estilização customizada)
+  - [Axios](https://axios-http.com/) (para requisições HTTP)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Backend (Simulado):**
+  - [json-server](https://github.com/typicode/json-server) (para criar uma API REST mock de forma rápida)
 
-### `npm run build`
+## 📋 Pré-requisitos e Instalação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para rodar este projeto, você precisará ter algumas ferramentas instaladas em sua máquina e, em seguida, instalar as dependências do projeto.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Ferramentas Necessárias (Pré-requisitos)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Certifique-se de que você tem o **Node.js** instalado. Ele é necessário para gerenciar os pacotes e rodar os servidores.
 
-### `npm run eject`
+-   **[Node.js](https://nodejs.org/en/)**: Baixe e instale a versão LTS (v18.x ou superior é recomendada).
+    - O **NPM** (Node Package Manager) é instalado automaticamente junto com o Node.js.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. Instalando as Dependências do Projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Após garantir que o Node.js está instalado, siga os passos abaixo:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1.  **Abra o terminal** e navegue até a pasta raiz do projeto:
+    ```bash
+    cd caminho/para/a/pasta/do/projeto
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2.  **Execute o comando de instalação**:
+    ```bash
+    npm install
+    ```
+    - Este comando irá ler o arquivo `package.json` e baixar todas as dependências necessárias para o projeto, incluindo React, Material-UI, Axios e o `json-server`.
 
-## Learn More
+## ▶️ Como Rodar a Aplicação
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para que a aplicação funcione completamente, é necessário rodar **dois servidores** ao mesmo tempo em **dois terminais diferentes**: o servidor da API (backend) e o servidor da aplicação React (frontend).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. Rodando o Servidor da API (Backend)
 
-### Code Splitting
+-   Abra um terminal na pasta raiz do projeto e execute o seguinte comando:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```bash
+    npm run api
+    ```
 
-### Analyzing the Bundle Size
+-   Isso iniciará o `json-server` na porta `3001`. O terminal mostrará uma mensagem de sucesso indicando que os recursos estão disponíveis em `http://localhost:3001/itens`.
+-   **Deixe este terminal aberto** enquanto estiver usando a aplicação.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 2. Rodando a Aplicação React (Frontend)
 
-### Making a Progressive Web App
+-   Abra um **novo terminal** (deixe o primeiro rodando a API).
+-   Navegue até a pasta raiz do projeto novamente, se necessário.
+-   Execute o seguinte comando:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```bash
+    npm start
+    ```
 
-### Advanced Configuration
+-   Isso iniciará o servidor de desenvolvimento do React. A aplicação será aberta automaticamente no seu navegador no endereço `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Resumo
 
-### Deployment
+| Terminal      | Comando         | Propósito             |
+|---------------|-----------------|-----------------------|
+| **Terminal 1** | `npm run api`   | Inicia o backend      |
+| **Terminal 2** | `npm start`     | Inicia o frontend     |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Agora você pode navegar para `http://localhost:3000` e usar a aplicação!
 
-### `npm run build` fails to minify
+## 📂 Estrutura de Pastas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A estrutura de arquivos principal dentro de `src/` foi organizada da seguinte forma:
+
+```
+src/
+|-- components/      # Componentes reutilizáveis (Formulário, Lista, Menu)
+|-- context/         # Lógica do estado global (ItemContext)
+|-- pages/           # Componentes que representam as páginas (Cadastro, Listagem)
+|-- services/        # Configuração da comunicação com a API (axios)
+|-- App.js           # Componente principal que gerencia as rotas
+|-- index.js         # Ponto de entrada da aplicação React
