@@ -1,9 +1,9 @@
 
 **EDUARDO FERNANDES DOS SANTOS - 2312130156**
 
-# TRABALHO TECNOLOGIA WEB USANDO REACT
+# SEGUNDO TRABALHO TECNOLOGIA WEB USANDO REACT
 
-Esta é uma aplicação web desenvolvida em React que permite ao usuário cadastrar, visualizar e remover itens. O projeto foi criado para demonstrar habilidades fundamentais no desenvolvimento frontend, incluindo componentização, gerenciamento de estado, integração com API REST, roteamento e estilização.
+Esta é uma aplicação web desenvolvida em React que permite ao usuário cadastrar, visualizar e remover itens.
 
 ## ✨ Funcionalidades
 
